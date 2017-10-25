@@ -9,7 +9,7 @@ WORKDIR /app
 ADD . /app
 
 # Make port 80 available to the world outside this container
-EXPOSE 80
+EXPOSE 8080
 
 # Define enviroment variable
 ENV JAVA_HOME /opt/java
