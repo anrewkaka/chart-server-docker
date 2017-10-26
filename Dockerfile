@@ -5,8 +5,8 @@ FROM java:latest
 # Set the working directory to /app
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-ADD . /app
+# Copy the app/chart directory contents into the container at /app
+ADD /home/lannt_xyz/chart/app/chart /app
 
 # Copy the local repository into container
 ADD /home/lannt_xyz/.m2 /root/.m2
