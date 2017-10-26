@@ -1,6 +1,7 @@
-version: '1'
+version: "3"
 services:
   chart:
+    image: lanntxyz/chart-server-docker:latest
     ports:
       - 8080:80
     volumes:
@@ -10,8 +11,10 @@ services:
       - redis
     environment:
       - REDIS_HOST=redis
-    command: ./gradlew clean build
   redis:
-    image: "redis:latest"
+    image: redis:latest
     volumes:
       - redis_data:/data
+
+volumes:
+  redis_data:
