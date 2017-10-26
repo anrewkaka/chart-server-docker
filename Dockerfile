@@ -9,7 +9,7 @@ WORKDIR /app
 ADD /home/lannt_xyz/chart/app/chart /app
 
 # Copy the local repository into container
-ADD /home/lannt_xyz/.m2 /root/.m2
+ADD ~/.m2 ~/.m2
 
 # Make port 80 available to the world outside this container
 EXPOSE 8080
