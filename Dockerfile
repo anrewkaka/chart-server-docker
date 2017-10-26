@@ -6,7 +6,7 @@ FROM java:latest
 WORKDIR /app
 
 # Copy the app/chart directory contents into the container at /app
-# ADD ~/chart/app/chart /app
+ADD . /app
 
 # Copy the local repository into container
 # ADD ~/.m2 ~/.m2
